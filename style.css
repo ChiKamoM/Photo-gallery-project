@@ -1,0 +1,52 @@
+*{
+      box-sizing: border-box;
+}
+body{
+      margin:0;
+      padding:0;
+      background-color:#8ECAE6;
+}
+header{
+      background-color: #F3DE2C;
+      height:100px;
+      width:100vw;
+      position:fixed;
+      top:0;
+      margin-bottom:2px;
+      display:block;
+}
+h1{
+      text-align: center;
+      font-family: "Brush Script MT";
+      font-weight: lighter;
+}
+header p{
+      text-align: center;
+}
+.gallery{
+      margin: auto;
+      width:75%;
+      height:;
+      background-color: #7CB518;
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-left:60px;
+      padding-right:60px;
+
+}
+
+img{
+      width:175px;
+      height:175px;
+      margin-top: 25px;
+      margin-left:60px;
+      margin-right:60px;
+}
+footer{
+      background-color: #F3DE2C;
+      height:100px;
+      width:100vw;
+      position:fixed;
+      bottom:0;
+}
