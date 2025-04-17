@@ -5,15 +5,14 @@ body{
       margin:0;
       padding:0;
       background-color:#8ECAE6;
+      display:flex;
+      flex-direction: column;
+      justify-content:flex-start;
 }
 header{
       background-color: #F3DE2C;
       height:100px;
       width:100vw;
-      position:fixed;
-      top:0;
-      margin-bottom:2px;
-      display:block;
 }
 h1{
       text-align: center;
@@ -23,30 +22,111 @@ h1{
 header p{
       text-align: center;
 }
-.gallery{
+.images{
       margin: auto;
+      margin-top:0;
       width:75%;
-      height:;
       background-color: #7CB518;
       display:flex;
       flex-wrap: wrap;
-      justify-content: center;
-      padding-left:60px;
-      padding-right:60px;
-
+      justify-content:center;
+      padding-left:30px;
+      padding-right:30px;
+      min-width: 290px;
+      overflow:auto;
 }
 
-img{
+.images>img{
       width:175px;
       height:175px;
-      margin-top: 25px;
-      margin-left:60px;
-      margin-right:60px;
+      margin:24px;
+      z-index: 1;
+      transition:0.2s ease-in-out;
+
 }
 footer{
       background-color: #F3DE2C;
       height:100px;
       width:100vw;
-      position:fixed;
-      bottom:0;
+      position:;
+      bottom:0%;      
+}
+.images>img:hover{
+      transform: scale3d(1.1, 1.1, 2);
+      box-shadow: 5px 5px darkgreen;
+      cursor:pointer;
+      border-radius: 5px;
+}
+
+
+.modal{
+      position: fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background-color: rgba(80, 255, 80, 0.7);
+      color:black;
+      overflow:auto;
+      opacity:0;
+      z-index: -1;
+}
+.modalContent{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction:column;
+}
+.modalImg{
+      height:300px;
+      width:300px;
+      border-radius: 10px;
+      border: 3px ridge forestgreen;
+}
+.prevBtn,.nextBtn{
+      color: forestgreen;
+      background-color: transparent;
+      border-style: none;
+      font-size:3em;
+}
+.prevBtn:hover,.nextBtn:hover{
+      background-color: rgba(21, 184, 21, 0.4);
+      color:#F3DE2C;
+      cursor: pointer;
+      border-radius: 8px;
+}
+.navBtns{
+      display:flex;
+      width:100%;
+      justify-content: space-between;
+}
+
+.imgCaption{
+      margin-top: 1em;
+      background-color: rgba(0, 100, 0, 0.7);
+      color:white;
+      font-size: 1em;
+      width:auto;
+      height: auto;
+      text-align: center;
+      padding:3px;
+      border:2px outset #F3DE2C; 
+      text-transform: capitalize;
+      
+}
+.close{
+      position:absolute;
+      font-size: 2em;
+      top: 1em;
+      right: 1em;
+      color:white;
+}
+.close:hover{
+      cursor: pointer;
+      color: red;
+}
+.modal.appear{
+      opacity: 1;
+      z-index: 999;
 }

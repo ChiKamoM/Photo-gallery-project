@@ -11,28 +11,30 @@
             <h1>Dogs</h1>
             <p>My favorite dog breeds</p>
       </header>
-      <div class="gallery">
-
-                  <img src="assets\beagle.jpg" alt="beagle puppy">
-
-                  <img src="assets/border-collie.jpg" alt="border-collie puppy">
-
-                  <img src="assets/corgi.jpg" alt="corgi puppy">
+      <div class="images">
+                  <img src="assets/beagle.jpg" id="beagle" alt="beagle puppy">
+                  <img src="assets/border-collie.jpg" id="border-collie" alt="border-collie puppy">
+                  <img src="assets/corgi.jpg" id="corgi" alt="corgi puppy">
                   <img src="assets/dalmation.jpg" alt="dalmation puppy">
-
-                  <img src="assets/golden-doodle.jpg" alt="golden-doodle puppy">
-
-                  <img src="assets/golden-retriever.jpg" alt="golden-retriever puppy">
-
-                  <img src="assets/husky.jpg" alt="husky puppy">
-
-                  <img src="assets\labrador.jpg" alt="labrador puppy">
-
-                  <img src="assets\pomeranian.jpg" alt="pomeranian puppy">
-
-                  <img src="assets\shiba-inu.jpg" alt="shiba-inu puppy">
-
+                  <img src="assets/golden-doodle.jpg" id="golden-doodle" alt="golden-doodle puppy">
+                  <img src="assets/golden-retriever.jpg" id="golden-retriever" alt="golden-retriever puppy">
+                  <img src="assets/husky.jpg" id="husky" alt="husky puppy">
+                  <img src="assets/labrador.jpg" id="labrador"  alt="labrador puppy">
+                  <img src="assets/pomeranian.jpg" id="pomeranian" alt="pomeranian puppy">
+                  <img src="assets/shiba-inu.jpg" id="shiba-inu" alt="shiba-inu puppy">
+      </div>
+      <div class="modal">
+            <span class="close">&#10006;</span>
+            <div class="modalContent">
+                  <img class="modalImg" src="">
+                  <span class="imgCaption" id="imgCaption"></span>
+                  <div class="navBtns">
+                        <button type="button" class="prevBtn">&#8678;</button>      
+                        <button type="button" class="nextBtn">&#8680;</button>
+                  </div>      
+            </div>
       </div>
       <footer></footer>
+      <script src="script.js"></script>
 </body>
 </html>
